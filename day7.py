@@ -1,100 +1,100 @@
-# import os
+import os
 
 
-# import random
-# list=["cat","mous","bird","child","dog","fish","rabbit"]
-# random.shuffle(list)
+import random
+list=["cat","mous","bird","child","dog","fish","rabbit"]
+random.shuffle(list)
 
-# incorect_pictures=["""
-#    +---+
-#    |   |
-#    0   |
-#   /|\  |
-#   / \  |
-#        |
-# =========""",
-# """
-#    +---+
-#    |   |
-#    0   |
-#   /|\  |
-#   /    |
-#        |
-# =========""",
-# """
-#    +---+
-#    |   |
-#    0   |
-#   /|\  |
-#        |
-#        |
-# =========""",
-# """
-#    +---+
-#    |   |
-#    0   |
-#   /|   |
-#        |
-#        |
-# =========""",
-# """
-#    +---+
-#    |   |
-#    0   |
-#    |   |
-#        |
-#        |
-# =========""",
-# """
-#    +---+
-#    |   |
-#    0   |
-#        |
-#        |
-#        |
-# =========""",
-# """
-#    +---+
-#    |   |
-#        |
-#        |
-#        |
-#        |
-# ========="""
-# ]
+incorect_pictures=["""
+   +---+
+   |   |
+   0   |
+  /|\  |
+  / \  |
+       |
+=========""",
+"""
+   +---+
+   |   |
+   0   |
+  /|\  |
+  /    |
+       |
+=========""",
+"""
+   +---+
+   |   |
+   0   |
+  /|\  |
+       |
+       |
+=========""",
+"""
+   +---+
+   |   |
+   0   |
+  /|   |
+       |
+       |
+=========""",
+"""
+   +---+
+   |   |
+   0   |
+   |   |
+       |
+       |
+=========""",
+"""
+   +---+
+   |   |
+   0   |
+       |
+       |
+       |
+=========""",
+"""
+   +---+
+   |   |
+       |
+       |
+       |
+       |
+========="""
+]
 
-# display=[]
-# word=" ".join(list[0]).split()
+display=[]
+word=" ".join(list[0]).split()
 
-# for i in list[0]:
-#     display+="_"
+for i in list[0]:
+    display+="_"
 
-# print(display)
+print(display)
 
-# incorect=7
-# life=6
-# while life != 0:
-#     variant=input("your guess: ").lower()
+incorect=7
+life=6
+while life != 0:
+    variant=input("your guess: ").lower()
 
 
-#     # Clearing the Screen
-#     os.system('cls')
+    # Clearing the Screen
+    os.system('cls')
 
-#     for j in range(len(list[0])):
-#         if word[j] == variant:
-#             display[j] = variant
+    for j in range(len(list[0])):
+        if word[j] == variant:
+            display[j] = variant
     
-#     if "_" not in display:
+    if "_" not in display:
         
-#         print("you win!")
-#         life=0
+        print("you win!")
+        life=0
         
-#     if variant not in list[0]:
-#         life = life-1
-#         print(incorect_pictures[life])
-#         print(f"your lifes equals {life}")    
+    if variant not in list[0]:
+        life = life-1
+        print(incorect_pictures[life])
+        print(f"your lifes equals {life}")    
 
-#     print(display)
+    print(display)
 
 
 
@@ -174,3 +174,12 @@
 # #         print(split_word2)
 
 logo="Hello, it's encoder & decoder!"
+
+
+mass_3 = [[3,2,4],[5,3,3],[8,9,3]]
+mass_5 = []
+for arr in mass_3:
+    mass_5.extend(arr)
+
+mass_x = list(set(mass_5))
+print(mass_x)

@@ -26,23 +26,23 @@ shift=int(input("what is the shift number?: "))
 
 text2=" ".join(text).split(" ")
 print(text2)
-# def cesar(shift_am, text_start, direction):
-#     output=""
-#     if direction == "decode":
-#         shift_am *= -1
-#     for char in text_start:
-#         if char in alfabet:
-#             a=alfabet.index(char)
-#             a+=shift_am
-#             output+=alfabet[a]
-#         else:
-#             output+=char
+def cesar(shift_am, text_start, direction):
+    output=""
+    if direction == "decode":
+        shift_am *= -1
+    for char in text_start:
+        if char in alfabet:
+            a=alfabet.index(char)
+            a+=shift_am
+            output+=alfabet[a]
+        else:
+            output+=" "
     
 
-#     from day7 import logo
-#     print(logo)
+    from day7 import logo
+    print(logo)
 
-#     print(f"your {e_or_d} massege is: {output}")
+    print(f"your {e_or_d} massege is: {output}")
 
-# cesar(shift_am=shift, text_start=text2, direction=e_or_d)
+cesar(shift_am=shift, text_start=text2, direction=e_or_d)
 
